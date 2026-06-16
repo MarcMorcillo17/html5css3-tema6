@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilos de Storage (Tema 6) */
+#cajaformulario {
+    float: left;
+    padding: 20px;
+    border: 1px solid #999;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#cajadatos {
+    float: left;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #999;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#cajadatos div {
+    border-bottom: 1px solid #eee;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Estilos de Canvas (Tema 5) */
+#contenedorVideojuego {
+    background: #fff;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    background: #000;
+    border: 5px solid #333;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive - Ejercicio 6 del PDF */
+@media all and (max-width: 1024px) {
+    #contenedorVideojuego {
+        width: 80%;
+        margin: 5%;
+        padding: 2% 5%;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}

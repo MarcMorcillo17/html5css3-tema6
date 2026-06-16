@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de la Serpiente - Completo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div id="contenedorVideojuego">
+        <h1>Serpiente HTML5</h1>
+        <canvas id="lienzo" width="400" height="400">
+            Su navegador no soporta canvas.
+        </canvas>
+        <div id="marcador">
+            Jugador: <span id="nombreJugador">Invitado</span> |
+            Puntos: <span id="puntos">0</span> |
+            Récord: <span id="record">0</span>
+        </div>
+        <p>Presiona <strong>"M"</strong> para Empezar / Pausar</p>
+    </div>
+
+    <hr>
+
+    <section id="cajaformulario">
+        <h2>Registro de Jugador</h2>
+        <form name="formulario">
+            <p>Tu Nombre:<br><input type="text" id="clave" placeholder="Nombre para el récord"></p>
+            <p><input type="button" id="grabar" value="Registrar y Jugar"></p>
+        </form>
+    </section>
+
+    <section id="cajadatos">
+        <h3>Historial de Récords</h3>
+        <div id="lista">No hay datos almacenados.</div>
+    </section>
+
+    <script src="videjuego.js"></script>
+</body>
+
+</html>
